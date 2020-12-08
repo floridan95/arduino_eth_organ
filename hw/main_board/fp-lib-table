@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Eurocad)(type KiCad)(uri ${KIPRJMOD}/Eurocad.pretty)(options "")(descr ""))
+  (lib (name Logo)(type KiCad)(uri ${KIPRJMOD}/logo_silk.pretty)(options "")(descr ""))
+)

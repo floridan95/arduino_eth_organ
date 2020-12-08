@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/floridan/Documents/kicad/output_driver/output_driver.sch</source>
+    <date>2020 November 17, Tuesday 22:54:07</date>
+    <tool>Eeschema (5.1.4-0-10_14)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>output_driver.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U2">
+      <value>TPIC6B595N</value>
+      <footprint>Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tpic6b595.pdf</datasheet>
+      <fields>
+        <field name="JLCPCB">C7094</field>
+        <field name="LCSC">C7094</field>
+        <field name="MFN">SHIFT REGISTERS SOIC-20_300MIL ROHS</field>
+        <field name="MFP">C7094</field>
+        <field name="Octopart">tpic6b595n-texas+instruments-500652</field>
+        <field name="Reichelt">147328</field>
+      </fields>
+      <libsource lib="tpic6b595" part="TPIC6B595N" description="8-Bit Shift Register 150mA 50V"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB2E29A</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C24497</field>
+        <field name="LCSC">C49678</field>
+        <field name="MFN">MULTILAYER CERAMIC CAPACITORS MLCC - SMD/SMT 100NF 50V 1206 ROHS</field>
+        <field name="MFP">C49678</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB3C185</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>PWR_5V_01x02</value>
+      <footprint>TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB4551F</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="JLCPCB">C24497</field>
+        <field name="LCSC">C49678</field>
+        <field name="MFN">MULTILAYER CERAMIC CAPACITORS MLCC - SMD/SMT 100NF 50V 1206 ROHS</field>
+        <field name="MFP">C49678</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB4C9CF</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>LM78M05_TO252</value>
+      <footprint>Package_TO_SOT_SMD:TO-252-2</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/LM/LM78M05.pdf</datasheet>
+      <fields>
+        <field name="JLCPCB">C58069</field>
+        <field name="LCSC">C58069</field>
+        <field name="MFN">LINEAR VOLTAGE REGULATORS TO-252-2(DPAK) ROHS</field>
+        <field name="MFP">C58069</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="LM78M05_TO252" description="Positive 500mA 35V Linear Regulator, Fixed Output 5V, TO-252 (D-PAK)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB4D20B</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>330n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="JLCPCB">C1740</field>
+        <field name="LCSC">C1740</field>
+        <field name="MFN">MULTILAYER CERAMIC CAPACITORS MLCC - SMD/SMT 330NF 50V 0805 ROHS</field>
+        <field name="MFP">0805B334K500NT</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB54B19</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>TPIC6B595N</value>
+      <footprint>Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tpic6b595.pdf</datasheet>
+      <fields>
+        <field name="JLCPCB">C7094</field>
+        <field name="LCSC">C7094</field>
+        <field name="MFN">SHIFT REGISTERS SOIC-20_300MIL ROHS</field>
+        <field name="MFP">C7094</field>
+        <field name="Octopart">tpic6b595n-texas+instruments-500652</field>
+        <field name="Reichelt">147328</field>
+      </fields>
+      <libsource lib="tpic6b595" part="TPIC6B595N" description="8-Bit Shift Register 150mA 50V"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB59018</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C24497</field>
+        <field name="LCSC">C49678</field>
+        <field name="MFN">MULTILAYER CERAMIC CAPACITORS MLCC - SMD/SMT 100NF 50V 1206 ROHS</field>
+        <field name="MFP">C49678</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB5A3C7</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB63A28</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB26211</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB25F68</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB25BAC</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB2485A</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB6AB39</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB7771B</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB77723</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB79A76</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB79A7E</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB7B737</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB7B73F</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB7D716</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB7D71E</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB7FFC1</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB7FFC9</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB824CC</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB824D4</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB84E6B</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB84E73</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB98197</tstamp>
+    </comp>
+    <comp ref="J11">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB9819D</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB981A3</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB981A9</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB981AF</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB981B7</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB981C9</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB981D1</tstamp>
+    </comp>
+    <comp ref="D12">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB981E3</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB981EB</tstamp>
+    </comp>
+    <comp ref="D13">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB981FD</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB98205</tstamp>
+    </comp>
+    <comp ref="D14">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB98217</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB9821F</tstamp>
+    </comp>
+    <comp ref="D15">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB98231</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB98239</tstamp>
+    </comp>
+    <comp ref="D16">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB9824B</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB98253</tstamp>
+    </comp>
+    <comp ref="D17">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB98265</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17673</field>
+        <field name="LCSC"> C17673</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17673</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB9826D</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>INPUT_01x05</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FC8344A</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>OUTPUT_01x05</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FCB03CA</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED_Small</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C2296</field>
+        <field name="LCSC">C2296</field>
+        <field name="MFN">LIGHT EMITTING DIODES (LED) YELLOW 592~594NM 95~113MCD@20MA TOP VIEW 0805 ROHS</field>
+        <field name="MFP">C2296</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FD2BFCD</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>470</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB"> C17710</field>
+        <field name="LCSC"> C17710</field>
+        <field name="MFN">CHIP RESISTOR - SURFACE MOUNT 4.7KOHMS ±1% 1/8W 0805 ROHS</field>
+        <field name="MFP"> C17710</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FD2BFD5</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FD63C61</tstamp>
+    </comp>
+    <comp ref="TP7">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FD68F5A</tstamp>
+    </comp>
+    <comp ref="TP9">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FD694A2</tstamp>
+    </comp>
+    <comp ref="TP10">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FD69CDE</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_4.3mm_M4_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FECA902</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_4.3mm_M4_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FED4F91</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_4.3mm_M4_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FED5762</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_4.3mm_M4_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FED610E</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="TestPoint_Probe">
+      <description>test point (alternative probe-style design)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint_Probe</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x05">
+      <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_Small">
+      <description>Light emitting diode, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="LM78M05_TO252">
+      <aliases>
+        <alias>MC78M05_TO252</alias>
+        <alias>KA78M05_TO252</alias>
+        <alias>LF15_TO252</alias>
+        <alias>LF18_TO252</alias>
+        <alias>LF25_TO252</alias>
+        <alias>LF33_TO252</alias>
+        <alias>LF50_TO252</alias>
+        <alias>LF60_TO252</alias>
+        <alias>LF80_TO252</alias>
+        <alias>LF85_TO252</alias>
+        <alias>LF120_TO252</alias>
+        <alias>LP2950-3.0_TO252</alias>
+        <alias>LP2950-3.3_TO252</alias>
+        <alias>LP2950-5.0_TO252</alias>
+        <alias>LF47_TO252</alias>
+        <alias>LF90_TO252</alias>
+      </aliases>
+      <description>Positive 500mA 35V Linear Regulator, Fixed Output 5V, TO-252 (D-PAK)</description>
+      <docs>http://www.fairchildsemi.com/ds/LM/LM78M05.pdf</docs>
+      <footprints>
+        <fp>TO?252*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM78M05_TO252</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TO-252-2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VI" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="VO" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="tpic6b595" part="TPIC6B595N">
+      <aliases>
+        <alias>TPIC6B595DW</alias>
+      </aliases>
+      <description>8-Bit Shift Register 150mA 50V</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tpic6b595.pdf</docs>
+      <footprints>
+        <fp>SOIC*</fp>
+        <fp>DIP*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPIC6B595N</field>
+        <field name="Reichelt">147328</field>
+        <field name="Octopart">tpic6b595n-texas+instruments-500652</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="power_in"/>
+        <pin num="2" name="VCC" type="power_in"/>
+        <pin num="3" name="SER_IN" type="input"/>
+        <pin num="4" name="DRAIN0" type="3state"/>
+        <pin num="5" name="DRAIN1" type="3state"/>
+        <pin num="6" name="DRAIN2" type="3state"/>
+        <pin num="7" name="DRAIN3" type="3state"/>
+        <pin num="8" name="~SRCLR" type="input"/>
+        <pin num="9" name="~G" type="input"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="GND" type="power_in"/>
+        <pin num="12" name="RCK" type="input"/>
+        <pin num="13" name="SRCK" type="input"/>
+        <pin num="14" name="DRAIN4" type="3state"/>
+        <pin num="15" name="DRAIN5" type="3state"/>
+        <pin num="16" name="DRAIN6" type="3state"/>
+        <pin num="17" name="DRAIN7" type="3state"/>
+        <pin num="18" name="SER_OUT" type="output"/>
+        <pin num="19" name="GND" type="power_in"/>
+        <pin num="20" name="NC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/Library/Application Support/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/Library/Application Support/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Library/Application Support/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/Library/Application Support/kicad/library/Mechanical.lib</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/Library/Application Support/kicad/library/Regulator_Linear.lib</uri>
+    </library>
+    <library logical="tpic6b595">
+      <uri>/Users/floridan/Documents/kicad/tpic6b595.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(D2-Pad2)">
+      <node ref="R2" pin="1"/>
+      <node ref="J4" pin="2"/>
+      <node ref="D2" pin="2"/>
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="U2" pin="20"/>
+      <node ref="C3" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U3" pin="10"/>
+      <node ref="U3" pin="11"/>
+      <node ref="U3" pin="19"/>
+      <node ref="U3" pin="20"/>
+      <node ref="H4" pin="1"/>
+      <node ref="H3" pin="1"/>
+      <node ref="H2" pin="1"/>
+      <node ref="H1" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="D1" pin="1"/>
+      <node ref="U2" pin="19"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U2" pin="10"/>
+      <node ref="U2" pin="11"/>
+    </net>
+    <net code="3" name="Net-(D10-Pad2)">
+      <node ref="D10" pin="2"/>
+      <node ref="R10" pin="1"/>
+      <node ref="J8" pin="2"/>
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="4" name="Net-(D2-Pad1)">
+      <node ref="R2" pin="2"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="5" name="Net-(D3-Pad1)">
+      <node ref="R3" pin="2"/>
+      <node ref="D3" pin="1"/>
+    </net>
+    <net code="6" name="Net-(D3-Pad2)">
+      <node ref="J4" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="D3" pin="2"/>
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="7" name="Net-(D4-Pad1)">
+      <node ref="R4" pin="2"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="8" name="Net-(D4-Pad2)">
+      <node ref="U2" pin="6"/>
+      <node ref="D4" pin="2"/>
+      <node ref="R4" pin="1"/>
+      <node ref="J5" pin="2"/>
+    </net>
+    <net code="9" name="Net-(D5-Pad1)">
+      <node ref="D5" pin="1"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="10" name="Net-(D5-Pad2)">
+      <node ref="D5" pin="2"/>
+      <node ref="U2" pin="7"/>
+      <node ref="J5" pin="1"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="11" name="Net-(D6-Pad1)">
+      <node ref="R6" pin="2"/>
+      <node ref="D6" pin="1"/>
+    </net>
+    <net code="12" name="Net-(D6-Pad2)">
+      <node ref="U2" pin="14"/>
+      <node ref="D6" pin="2"/>
+      <node ref="R6" pin="1"/>
+      <node ref="J6" pin="2"/>
+    </net>
+    <net code="13" name="Net-(D7-Pad1)">
+      <node ref="D7" pin="1"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="14" name="Net-(D7-Pad2)">
+      <node ref="J6" pin="1"/>
+      <node ref="U2" pin="15"/>
+      <node ref="D7" pin="2"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="15" name="Net-(D8-Pad1)">
+      <node ref="D8" pin="1"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="16" name="Net-(D8-Pad2)">
+      <node ref="R8" pin="1"/>
+      <node ref="U2" pin="16"/>
+      <node ref="J7" pin="2"/>
+      <node ref="D8" pin="2"/>
+    </net>
+    <net code="17" name="Net-(D9-Pad1)">
+      <node ref="D9" pin="1"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="18" name="Net-(D9-Pad2)">
+      <node ref="R9" pin="1"/>
+      <node ref="D9" pin="2"/>
+      <node ref="J7" pin="1"/>
+      <node ref="U2" pin="17"/>
+    </net>
+    <net code="19" name="Net-(D10-Pad1)">
+      <node ref="R10" pin="2"/>
+      <node ref="D10" pin="1"/>
+    </net>
+    <net code="20" name="Net-(D11-Pad1)">
+      <node ref="D11" pin="1"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="21" name="Net-(D11-Pad2)">
+      <node ref="U3" pin="5"/>
+      <node ref="J8" pin="1"/>
+      <node ref="D11" pin="2"/>
+      <node ref="R11" pin="1"/>
+    </net>
+    <net code="22" name="Net-(D12-Pad1)">
+      <node ref="R12" pin="2"/>
+      <node ref="D12" pin="1"/>
+    </net>
+    <net code="23" name="Net-(D12-Pad2)">
+      <node ref="D12" pin="2"/>
+      <node ref="U3" pin="6"/>
+      <node ref="J9" pin="2"/>
+      <node ref="R12" pin="1"/>
+    </net>
+    <net code="24" name="Net-(D13-Pad1)">
+      <node ref="D13" pin="1"/>
+      <node ref="R13" pin="2"/>
+    </net>
+    <net code="25" name="Net-(D13-Pad2)">
+      <node ref="D13" pin="2"/>
+      <node ref="R13" pin="1"/>
+      <node ref="U3" pin="7"/>
+      <node ref="J9" pin="1"/>
+    </net>
+    <net code="26" name="Net-(D14-Pad1)">
+      <node ref="R14" pin="2"/>
+      <node ref="D14" pin="1"/>
+    </net>
+    <net code="27" name="Net-(D14-Pad2)">
+      <node ref="R14" pin="1"/>
+      <node ref="D14" pin="2"/>
+      <node ref="J10" pin="2"/>
+      <node ref="U3" pin="14"/>
+    </net>
+    <net code="28" name="Net-(D15-Pad1)">
+      <node ref="R15" pin="2"/>
+      <node ref="D15" pin="1"/>
+    </net>
+    <net code="29" name="Net-(D15-Pad2)">
+      <node ref="R15" pin="1"/>
+      <node ref="D15" pin="2"/>
+      <node ref="J10" pin="1"/>
+      <node ref="U3" pin="15"/>
+    </net>
+    <net code="30" name="Net-(D16-Pad1)">
+      <node ref="R16" pin="2"/>
+      <node ref="D16" pin="1"/>
+    </net>
+    <net code="31" name="Net-(D16-Pad2)">
+      <node ref="U3" pin="16"/>
+      <node ref="J11" pin="2"/>
+      <node ref="R16" pin="1"/>
+      <node ref="D16" pin="2"/>
+    </net>
+    <net code="32" name="Net-(D17-Pad1)">
+      <node ref="R17" pin="2"/>
+      <node ref="D17" pin="1"/>
+    </net>
+    <net code="33" name="Net-(D17-Pad2)">
+      <node ref="J11" pin="1"/>
+      <node ref="U3" pin="17"/>
+      <node ref="R17" pin="1"/>
+      <node ref="D17" pin="2"/>
+    </net>
+    <net code="34" name="VCC">
+      <node ref="J1" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="35" name="+5V">
+      <node ref="U1" pin="3"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="U2" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="U3" pin="2"/>
+      <node ref="TP1" pin="1"/>
+    </net>
+    <net code="36" name="RCK">
+      <node ref="J2" pin="5"/>
+      <node ref="U3" pin="12"/>
+      <node ref="U2" pin="12"/>
+      <node ref="J3" pin="5"/>
+    </net>
+    <net code="37" name="SRCK">
+      <node ref="U2" pin="13"/>
+      <node ref="J3" pin="3"/>
+      <node ref="U3" pin="13"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="38" name="SER_IN">
+      <node ref="U2" pin="3"/>
+      <node ref="J2" pin="4"/>
+      <node ref="TP7" pin="1"/>
+    </net>
+    <net code="39" name="SER_CHAIN">
+      <node ref="U2" pin="18"/>
+      <node ref="U3" pin="3"/>
+      <node ref="TP9" pin="1"/>
+    </net>
+    <net code="40" name="SR_CLR">
+      <node ref="U2" pin="8"/>
+      <node ref="J3" pin="2"/>
+      <node ref="U3" pin="8"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="41" name="OE">
+      <node ref="U3" pin="9"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="42" name="Net-(D1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="43" name="SER_OUT">
+      <node ref="U3" pin="18"/>
+      <node ref="TP10" pin="1"/>
+      <node ref="J3" pin="4"/>
+    </net>
+  </nets>
+</export>

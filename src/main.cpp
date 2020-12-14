@@ -17,7 +17,7 @@ byte mac[] = {
 IPAddress ip(192, 168, 88, 12);
 static uint8_t reply[] = {192, 168, 88, 255};
 Output o = Output();
-MatrixKBD m = MatrixKBD();
+MatrixKBD m = MatrixKBD(1);
 IPMIDI_CREATE_DEFAULT_INSTANCE();
 
 int t1, t2;
@@ -84,6 +84,7 @@ void setup()
     MIDI.setHandleNoteOff(OnMidiNoteOff);
     MIDI.setHandleControlChange(OnMidiControlChange);
     m.setMIDICallback(sendMessage);
+
     t1 = millis();
     pinMode(A0, INPUT);
 
@@ -111,7 +112,12 @@ void loop()
 }
 
 void sendMessage(uint8_t midiNoteNumber, boolean on){
-    
+    if(on) {
+        MIDI.sendNoteOn(midiNoteNumber,0x7F,m._channel);
+    }else
+    {
+        MIDI.sendNoteOff(midiNoteNumber,0x00,m._channel);
+    }
 }
 void sendCrescLevel(uint8_t level, boolean direction)
 {
@@ -163,6 +169,9 @@ void OnMidiControlChange(byte control, byte value, byte channel){
         break;
     case 2:
         // control second manual swell shades
+        break;
+    case 123:
+        o.clear();
         break;
     default:
         break;

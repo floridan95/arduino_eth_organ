@@ -48,7 +48,7 @@ uint8_t bitMap[8]; // 8x8 bits
 class MatrixKBD
 {
 public:
-    MatrixKBD()
+    MatrixKBD(uint8_t channel)
     {
         pinMode(LOAD595, OUTPUT);
         pinMode(CLOCK595, OUTPUT);
@@ -57,8 +57,9 @@ public:
         for(int ele:rows){
             pinMode(ele,INPUT_PULLUP);
         }
+        _channel = channel;
     }
-
+    uint8_t _channel;
     uint8_t state;
     uint8_t old_state;
     typedef void (*midiCallback)(uint8_t note,boolean on);

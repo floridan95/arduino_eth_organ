@@ -3,6 +3,7 @@
 #include <Arduino.h>
 #include "main.h"
 #include "output.h"
+#include "matrix_read.h"
 #include "input_shift_reg.h"
 
 #include <Ethernet.h>
@@ -16,10 +17,12 @@ byte mac[] = {
 IPAddress ip(192, 168, 88, 12);
 static uint8_t reply[] = {192, 168, 88, 255};
 Output o = Output();
+MatrixKBD m = MatrixKBD();
 IPMIDI_CREATE_DEFAULT_INSTANCE();
 
 int t1, t2;
 HystFilter analog1(1024, 16, 5);
+HystFilter swellShades(128, 16, 5);
 uint16_t cresc;
 
 uint8_t cresc_mem[32] = {1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0,
@@ -48,12 +51,13 @@ void setup()
     // You can use Ethernet.init(pin) to configure the CS pin
     Ethernet.init(53); // Most Arduino shields
 
+    #ifdef DEBUG
     Serial.begin(115200);
     while (!Serial)
     {
         ; // Waiting for serial connection
     }
-
+    #endif
     // start the Ethernet
     Ethernet.begin(mac, ip);
     // Check for Ethernet hardware present
@@ -78,7 +82,8 @@ void setup()
     MIDI.getTransport()->setReply(reply);
     MIDI.setHandleNoteOn(OnMidiNoteOn);
     MIDI.setHandleNoteOff(OnMidiNoteOff);
-
+    MIDI.setHandleControlChange(OnMidiControlChange);
+    m.setMIDICallback(sendMessage);
     t1 = millis();
     pinMode(A0, INPUT);
 
@@ -88,6 +93,7 @@ void setup()
 void loop()
 {
     MIDI.read();
+    m.shift_matrix();
     t2 = millis();
     if (t2 - t1 > 100)
     {
@@ -104,18 +110,25 @@ void loop()
     }
 }
 
+void sendMessage(uint8_t midiNoteNumber, boolean on){
+    
+}
 void sendCrescLevel(uint8_t level, boolean direction)
 {
     uint8_t idx = level % 2;
     if (direction)
     {
         MIDI.sendNoteOn(cresc_mem[idx], 0x7F, 0x0A);
-        MIDI.sendNoteOn(cresc_mem[idx + 1], 0x7F, 0x0A);
+        for(uint8_t i = 0; i < 16; i++){
+            o.state |= (bitRead(cresc_mem[idx],i) << i);
+        }
     }
     else
     {
         MIDI.sendNoteOff(cresc_mem[idx], 0x7F, 0x0A);
-        MIDI.sendNoteOff(cresc_mem[idx + 1], 0x7F, 0x0A);
+        for(uint8_t i = 0; i < 16; i++){
+            o.state |= (bitRead(cresc_mem[idx],i) << i);
+        }
     }
 }
 
@@ -140,6 +153,22 @@ void OnMidiNoteOff(byte channel, byte note, byte velocity)
     // Echo
     //MIDI.sendNoteOff(note, velocity, channel);
 }
+
+void OnMidiControlChange(byte control, byte value, byte channel){
+    value = swellShades.getOutputLevel(value);
+    switch (channel)
+    {
+    case 1:
+        // control first manual swell shades
+        break;
+    case 2:
+        // control second manual swell shades
+        break;
+    default:
+        break;
+    }
+}
+
 
 void midiProcess(byte channel, byte note, boolean state)
 {

@@ -23,6 +23,10 @@ IPMIDI_CREATE_DEFAULT_INSTANCE();
 int t1, t2;
 HystFilter analog1(1024, 16, 5);
 HystFilter swellShades(128, 16, 5);
+
+boolean first_second_octave_coupler; // set these with register switches - currently not connected
+boolean first_octave_coupler;
+
 uint16_t cresc;
 
 uint8_t cresc_mem[32] = {1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0,
@@ -51,13 +55,13 @@ void setup()
     // You can use Ethernet.init(pin) to configure the CS pin
     Ethernet.init(53); // Most Arduino shields
 
-    #ifdef DEBUG
+#ifdef DEBUG
     Serial.begin(115200);
     while (!Serial)
     {
         ; // Waiting for serial connection
     }
-    #endif
+#endif
     // start the Ethernet
     Ethernet.begin(mac, ip);
     // Check for Ethernet hardware present
@@ -111,12 +115,15 @@ void loop()
     }
 }
 
-void sendMessage(uint8_t midiNoteNumber, boolean on){
-    if(on) {
-        MIDI.sendNoteOn(midiNoteNumber,0x7F,m._channel);
-    }else
+void sendMessage(uint8_t midiNoteNumber, boolean on)
+{
+    if (on)
     {
-        MIDI.sendNoteOff(midiNoteNumber,0x00,m._channel);
+        MIDI.sendNoteOn(midiNoteNumber, 0x7F, m._channel);
+    }
+    else
+    {
+        MIDI.sendNoteOff(midiNoteNumber, 0x00, m._channel);
     }
 }
 void sendCrescLevel(uint8_t level, boolean direction)
@@ -125,15 +132,17 @@ void sendCrescLevel(uint8_t level, boolean direction)
     if (direction)
     {
         MIDI.sendNoteOn(cresc_mem[idx], 0x7F, 0x0A);
-        for(uint8_t i = 0; i < 16; i++){
-            o.state |= (bitRead(cresc_mem[idx],i) << i);
+        for (uint8_t i = 0; i < 16; i++)
+        {
+            o.state |= (bitRead(cresc_mem[idx], i) << i);
         }
     }
     else
     {
         MIDI.sendNoteOff(cresc_mem[idx], 0x7F, 0x0A);
-        for(uint8_t i = 0; i < 16; i++){
-            o.state |= (bitRead(cresc_mem[idx],i) << i);
+        for (uint8_t i = 0; i < 16; i++)
+        {
+            o.state |= (bitRead(cresc_mem[idx], i) << i);
         }
     }
 }
@@ -160,7 +169,8 @@ void OnMidiNoteOff(byte channel, byte note, byte velocity)
     //MIDI.sendNoteOff(note, velocity, channel);
 }
 
-void OnMidiControlChange(byte control, byte value, byte channel){
+void OnMidiControlChange(byte control, byte value, byte channel)
+{
     value = swellShades.getOutputLevel(value);
     switch (channel)
     {
@@ -178,6 +188,17 @@ void OnMidiControlChange(byte control, byte value, byte channel){
     }
 }
 
+void addCouplers(uint8_t channel, uint8_t note, boolean state)
+{
+    if (channel == 1 && first_octave_coupler)
+    {
+        o.setState(note + 12, state);
+    }
+    else if(channel == 1 && first_second_octave_coupler){
+        // second.setState(note+ 12,state);
+    }
+        
+}
 
 void midiProcess(byte channel, byte note, boolean state)
 {
@@ -186,6 +207,7 @@ void midiProcess(byte channel, byte note, boolean state)
     case 1:
         // First manual
         o.setState(note, state);
+        addCouplers(channel, note, state);
         break;
     case 2:
         // Second Manual

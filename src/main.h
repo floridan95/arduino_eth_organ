@@ -22,4 +22,6 @@ void sendCrescLevel(uint8_t level, boolean direction);
 
 void sendMessage(uint8_t midiNoteNumber, boolean on);
 
+void addCouplers(Output out, uint8_t note, boolean state);
+
 void midiProcess(byte channel,byte note, boolean state);

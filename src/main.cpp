@@ -125,19 +125,7 @@ void OnMidiNoteOn(byte channel, byte note, byte velocity)
     Logging(channel);
     Logging(note);
     Loggingln(velocity);
-    switch (channel)
-    {
-    case 14:
-        // Registers
-        o.setState(note, true);
-        break;
-    case 1:
-        o.setState(note-44, true);
-        break;
-    default:
-        // Turn on notes on channel
-        break;
-    }
+    midiProcess(channel, note, true);
     //Echo
     //MIDI.sendNoteOn(note, velocity, channel);
 }
@@ -148,19 +136,37 @@ void OnMidiNoteOff(byte channel, byte note, byte velocity)
     Logging(channel);
     Logging(note);
     Loggingln(velocity);
+    midiProcess(channel, note, false);
+    // Echo
+    //MIDI.sendNoteOff(note, velocity, channel);
+}
+
+void midiProcess(byte channel, byte note, boolean state)
+{
     switch (channel)
     {
-    case 14:
-        // Registers
-        o.setState(note, false);
-        break;
     case 1:
-        o.setState(note-44, false);
+        // First manual
+        o.setState(note, state);
         break;
+    case 2:
+        // Second Manual
+        break;
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+        // 6-9 regiszterek (channel,note,state)
+        break;
+
+    case 10:
+        // Pedal
+        o.setState(note, state);
+        break;
+    case 11:
+        // Setzer
     default:
         // Turn on notes on channel
         break;
     }
-    // Echo
-    //MIDI.sendNoteOff(note, velocity, channel);
 }

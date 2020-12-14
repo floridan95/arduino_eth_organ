@@ -17,3 +17,5 @@ void OnMidiNoteOn(byte channel, byte note, byte velocity);
 void OnMidiNoteOff(byte channel, byte note, byte velocity);
 
 void sendCrescLevel(uint8_t level, boolean direction);
+
+void midiProcess(byte channel,byte note, boolean state);

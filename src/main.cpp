@@ -21,6 +21,7 @@ MatrixKBD m = MatrixKBD(1);
 InputShiftReg iReg = InputShiftReg();
 IPMIDI_CREATE_DEFAULT_INSTANCE();
 
+long test = 0;
 int t1, t2;
 HystFilter analog1(1024, 16, 5);
 HystFilter swellShades(128, 16, 5);
@@ -157,6 +158,9 @@ void OnMidiNoteOn(byte channel, byte note, byte velocity)
     Logging(channel);
     Logging(note);
     Loggingln(velocity);
+    test++;
+    Logging(" DropTest ");
+    Logging(test);
     midiProcess(channel, note, true);
     //Echo
     //MIDI.sendNoteOn(note, velocity, channel);
@@ -168,6 +172,7 @@ void OnMidiNoteOff(byte channel, byte note, byte velocity)
     Logging(channel);
     Logging(note);
     Loggingln(velocity);
+    test++;
     midiProcess(channel, note, false);
     // Echo
     //MIDI.sendNoteOff(note, velocity, channel);

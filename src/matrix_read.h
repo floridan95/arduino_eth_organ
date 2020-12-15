@@ -42,7 +42,7 @@ const uint8_t midiMap[8][8] = {
 
 uint8_t colIdx = 0;
 
-uint8_t bitMap[8]; // 8x8 bits 
+uint8_t bitStateMap[8]; // 8x8 bits 
 
 // Matrix one by one scanning, or magnet driver
 class MatrixKBD
@@ -102,12 +102,10 @@ public:
             for(uint8_t i = 0;i<sizeof(rows);i++)
             {
                 boolean noteState = !digitalRead(rows[i]);
-                if(noteState != bitRead(bitMap[colIdx],i)) {
+                if(noteState != bitRead(bitStateMap[colIdx],i)) {
                     _midiCallback(midiMap[colIdx][i],noteState);
                 }
-                // inverse logic, we are pulling down the rows, via column indexing by 0
-                bitWrite(bitMap[colIdx],i,state);
-                
+                bitWrite(bitStateMap[colIdx],i,state);
             }
             old_state = state;
         }

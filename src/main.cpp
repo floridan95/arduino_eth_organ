@@ -18,6 +18,7 @@ IPAddress ip(192, 168, 88, 12);
 static uint8_t reply[] = {192, 168, 88, 255};
 Output o = Output();
 MatrixKBD m = MatrixKBD(1);
+InputShiftReg iReg = InputShiftReg();
 IPMIDI_CREATE_DEFAULT_INSTANCE();
 
 int t1, t2;
@@ -88,6 +89,8 @@ void setup()
     MIDI.setHandleNoteOff(OnMidiNoteOff);
     MIDI.setHandleControlChange(OnMidiControlChange);
     m.setMIDICallback(sendMessage);
+    iReg.setMIDICallback(sendMessage);
+    iReg.setOutputMessageCallback(midiProcess);
 
     t1 = millis();
     pinMode(A0, INPUT);
@@ -98,7 +101,8 @@ void setup()
 void loop()
 {
     MIDI.read();
-    m.shift_matrix();
+    //m.shift_matrix();
+    iReg.readShiftRegisters();
     t2 = millis();
     if (t2 - t1 > 100)
     {
@@ -128,7 +132,7 @@ void sendMessage(uint8_t midiNoteNumber, boolean on)
 }
 void sendCrescLevel(uint8_t level, boolean direction)
 {
-    uint8_t idx = level % 2;
+    uint8_t idx = level * 2; // analog is from 0-15 -> but we have 32 slots
     if (direction)
     {
         MIDI.sendNoteOn(cresc_mem[idx], 0x7F, 0x0A);
@@ -181,6 +185,7 @@ void OnMidiControlChange(byte control, byte value, byte channel)
         // control second manual swell shades
         break;
     case 123:
+        // AllNotesOff
         o.clear();
         break;
     default:

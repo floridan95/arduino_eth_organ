@@ -39,7 +39,7 @@ public:
 
     void setState(uint8_t index, boolean value)
     {
-        bitWrite(state, index, value);
+        bitWrite(state, index-36, value);
         shift();
     }
 
